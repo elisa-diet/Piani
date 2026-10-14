@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#059669">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Pocket Plan">
+    <title>Pocket Plan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+*,::before,::after{box-sizing:border-box;border:0 solid #e5e7eb}
+html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+body{margin:0;line-height:inherit;background:#f3f4f6;color:#1f2937;padding-bottom:3rem;-webkit-tap-highlight-color:transparent}
+h1,p,ul{margin:0}ul{list-style:none;padding:0}b{font-weight:700}
+button{font-family:inherit;font-size:100%;line-height:inherit;color:inherit;background:transparent;border:0;padding:0;cursor:pointer}
+i{font-style:normal}
+.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
+.hidden{display:none}.block{display:block}.flex{display:flex}
+.sticky{position:sticky}.top-0{top:0}.z-50{z-index:50}
+.items-center{align-items:center}.justify-between{justify-content:space-between}
+.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}
+.mx-auto{margin-left:auto;margin-right:auto}.max-w-md{max-width:28rem}
+.overflow-x-auto{overflow-x:auto}.whitespace-nowrap{white-space:nowrap}
+.mb-1{margin-bottom:.25rem}.mb-2{margin-bottom:.5rem}.mb-4{margin-bottom:1rem}
+.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}
+.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3\.5{padding:.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}
+.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}
+.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}
+.pb-1{padding-bottom:.25rem}.pb-2{padding-bottom:.5rem}
+.space-y-2>:not([hidden])~:not([hidden]){margin-top:.5rem}
+.space-y-3>:not([hidden])~:not([hidden]){margin-top:.75rem}
+.rounded{border-radius:.25rem}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}
+.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}
+.rounded-b-3xl{border-bottom-left-radius:1.5rem;border-bottom-right-radius:1.5rem}
+.border{border-width:1px}.border-b{border-bottom-width:1px}
+.shadow-sm{box-shadow:0 1px 2px 0 rgba(0,0,0,.05)}
+.shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+.text-xs{font-size:.75rem;line-height:1rem}.text-xl{font-size:1.25rem;line-height:1.75rem}
+.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}
+.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-bold{font-weight:700}
+.uppercase{text-transform:uppercase}
+.transition-all{transition:all .15s cubic-bezier(.4,0,.2,1)}
+.backdrop-blur-sm{-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.tabs-bar{position:sticky;top:6rem;z-index:40;background:#f3f4f6;margin:0 -1rem 1rem;padding:.75rem 1rem .25rem}
+.leading-relaxed{line-height:1.625}.text-gray-900{color:#111827}.text-red-600{color:#dc2626}
+.bg-red-50\/50{background:rgba(254,242,242,.5)}.border-red-100\/50{border-color:rgba(254,226,226,.5)}
+.text-white{color:#fff}.text-gray-500{color:#6b7280}.text-gray-600{color:#4b5563}.text-gray-700{color:#374151}
+.bg-white{background:#fff}.bg-gray-50{background:#f9fafb}.border-gray-100{border-color:#f3f4f6}
+.bg-emerald-50{background:#ecfdf5}.bg-emerald-600{background:#059669}.bg-emerald-700{background:#047857}
+.bg-emerald-700\/50{background:rgba(4,120,87,.5)}
+.text-emerald-50{color:#ecfdf5}.text-emerald-100{color:#d1fae5}.text-emerald-600{color:#059669}.text-emerald-900{color:#064e3b}
+.border-emerald-100{border-color:#d1fae5}
+.bg-amber-50{background:#fffbeb}.bg-amber-200{background:#fde68a}.border-amber-200{border-color:#fde68a}
+.text-amber-800{color:#92400e}.text-amber-900{color:#78350f}
+.bg-purple-50{background:#faf5ff}.bg-purple-200{background:#e9d5ff}.border-purple-200{border-color:#e9d5ff}
+.text-purple-600{color:#9333ea}.text-purple-800{color:#6b21a8}.text-purple-900{color:#581c87}
+</style>
+</head>
+<body>
+
+    <header class="bg-emerald-600 text-white p-5 rounded-b-3xl shadow-lg sticky top-0 z-50">
+        <div class="flex justify-between items-center mb-2">
+            <div>
+                <h1 class="text-xl font-bold">Pocket Plan</h1>
+                <p class="text-xs text-emerald-100">Dott.ssa Elisa Vasa • Biologa Nutrizionista</p>
+            </div>
+            <div class="bg-emerald-700 px-3 py-1 rounded-full text-xs font-semibold">Obiettivo: 58 Kg</div>
+        </div>
+        <div class="flex justify-between text-xs bg-emerald-700/50 p-2.5 rounded-xl mt-3 text-emerald-50 backdrop-blur-sm"><span><b>Paziente:</b> Eleanna Sammarco</span><span><b>Peso:</b> 67,4 Kg</span><span><b>BMI:</b> 25,1</span></div>
+    </header>
+
+    <main style="padding:1rem;max-width:28rem;margin:0 auto">
+
+<div id="tabsbar" class="tabs-bar"><div class="flex gap-2 overflow-x-auto no-scrollbar py-1">
+<button onclick="showTab('lista1')" id="tab-lista1" class="tab-btn px-4 py-2.5 bg-emerald-600 text-white rounded-xl text-xs font-bold shadow-sm whitespace-nowrap transition-all" style="flex:none">Lun / Gio (Lista 1)</button>
+<button onclick="showTab('lista2')" id="tab-lista2" class="tab-btn px-4 py-2.5 bg-white text-gray-600 rounded-xl text-xs font-bold shadow-sm whitespace-nowrap transition-all" style="flex:none">Mar / Ven (Lista 2)</button>
+<button onclick="showTab('lista3')" id="tab-lista3" class="tab-btn px-4 py-2.5 bg-white text-gray-600 rounded-xl text-xs font-bold shadow-sm whitespace-nowrap transition-all" style="flex:none">Mer / Dom (Lista 3)</button>
+<button onclick="showTab('lista4')" id="tab-lista4" class="tab-btn px-4 py-2.5 bg-white text-gray-600 rounded-xl text-xs font-bold shadow-sm whitespace-nowrap transition-all" style="flex:none">Sabato (Lista 4)</button>
+<button onclick="showTab('evitare')" id="tab-evitare" class="tab-btn px-4 py-2.5 bg-white text-gray-600 rounded-xl text-xs font-bold shadow-sm whitespace-nowrap transition-all" style="flex:none">🚫 Evitare</button>
+</div></div>
+
+<div id="lista1" class="tab-content space-y-3">
+<div class="bg-amber-50 border border-amber-200 text-amber-800 text-xs p-2.5 rounded-xl font-medium flex justify-between items-center"><span>🗓️ Giornate: <b>Lunedì</b> e <b>Giovedì</b></span><span class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded text-[10px] uppercase font-bold">Lista 1</span></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-mug-hot"></i> COLAZIONE</div><ul class="text-xs space-y-2 text-gray-700">
+<li>☕ <b>The o caffè non zuccherati:</b> q.b.</li>
+<li>🥛 <b>Latte di soia senza zuccheri:</b> 150g</li>
+<li>🍞 <b>Fette biscottate n°3:</b> 30g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Fette biscottate n°2 + un velo di marmellata o miele / Fiocchi d&#x27;avena, fiocchi di farro, cereali integrali 30g / Biscotti secchi integrali (tipo Oro Saiwa Fibrattiva) 25g / Pane integrale o di segale 50g / Farina integrale o di avena per crepes di albumi 30g</div></li>
+<li>🥣 <b>Yogurt greco al naturale 0% grassi:</b> 150g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Albumi pastorizzati cotti semplici o crepes 150g / Yogurt di albumi Yoeggs 125g, gusto a scelta</div></li>
+<li>🌰 <b>Mandorle:</b> 10g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Noci, nocciole, anacardi, pistacchi, pinoli, noci pecan, noci del Brasile, macadamia, semi di sesamo 10g / Cioccolato fondente &gt;85% 10g / Burro d&#x27;arachidi, crema di mandorle o tahina al 100%, 10g</div></li>
+</ul></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-apple-whole"></i> SPUNTINO MATTINA</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🫘 <b>Lupini ben dissalati:</b> 50g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Yogurt al naturale 0,1%grassi 125g / Fiocchi di latte 0,3% grassi 75g, 1/2 vasetto (es Milk )</div></li>
+</ul></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-utensils"></i> PRANZO</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🍚 <b>Riso (basmati, integrale, venere o rosso):</b> 50g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Pasta, pasta integrale, couscous, orzo, farro, quinoa,sorgo, bulgur 50g / Grano saraceno, pasta di grano saraceno 60g / Pane integrale o di segale 80g / Frisella integrale 50g</div></li>
+<li>🥚 <b>Uova (n°2):</b> 120g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Salmone o sgombro freschi, surgelati o al naturale 80g / Tonno sott&#x27;olio ben scolato 60g / Prosciutto cotto privato del grasso, bresaola70g</div></li>
+<li>🥦 <b>Verdure:</b> 250g</li>
+</ul></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-cookie-bite"></i> SPUNTINO POMERIGGIO</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🍓 <b>Frutta fresca di stagione:</b> 200g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Banana, mandarini, uva, fichi, mango 100g / Spremuta o centrifuga di frutta e verdura, un bicchiere da 150g</div></li>
+</ul></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-moon"></i> CENA</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🍗 <b>Pollo (petto):</b> 160g
+<span class="block text-[11px] text-gray-500"><b>Oppure:</b> Tacchino (petto) 160g</span></li>
+<li>🍞 <b>Pane integrale o di segale:</b> 30g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Fette Wasa integrali n°2, 20g / Patate 100g / Piselli freschi o surgelati 150g / Pangrattato per gratinatura al forno 15g</div></li>
+<li>🥦 <b>Verdure:</b> 250g</li>
+</ul></div>
+<div class="bg-emerald-50 p-3.5 rounded-2xl border border-emerald-100 text-xs text-emerald-900"><p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-bottle-droplet text-emerald-600"></i> CONDIMENTI GIORNALIERI</p><p class="mt-1"><b>Olio extravergine d&#x27;oliva:</b> 20g (4 cucchiaini da the da gestire tra pranzo e cena)</p><p class="text-gray-600 text-[11px] mt-0.5">Aceto, limone, aglio, spezie, sugo di pomodoro: q.b.</p></div>
+</div>
+<div id="lista2" class="tab-content hidden space-y-3">
+<div class="bg-amber-50 border border-amber-200 text-amber-800 text-xs p-2.5 rounded-xl font-medium flex justify-between items-center"><span>🗓️ Giornate: <b>Martedì</b> e <b>Venerdì</b></span><span class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded text-[10px] uppercase font-bold">Lista 2</span></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-1"><i class="fa-solid fa-mug-hot"></i> COLAZIONE</div><p class="text-xs text-gray-700">Come colazione lista 1</p></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-apple-whole"></i> SPUNTINO MATTINA</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🫘 <b>Lupini ben dissalati:</b> 50g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Yogurt al naturale 0,1%grassi 125g / Fiocchi di latte 0,3% grassi 75g, 1/2 vasetto (es Milk )</div></li>
+</ul></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-utensils"></i> PRANZO</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🫘 <b>Fagioli, ceci o lenticchie (pesati secchi):</b> 80g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Fagioli, ceci o lenticchie precotti in scatola 240g / Pasta di lenticchie, di ceci o di piselli al 100%, 80g / Farina di ceci 80g</div></li>
+<li>🥦 <b>Verdure:</b> 250g</li>
+</ul></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-cookie-bite"></i> SPUNTINO POMERIGGIO</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🍓 <b>Frutta fresca di stagione:</b> 200g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Banana, mandarini, uva, fichi, mango 100g / Spremuta o centrifuga di frutta e verdura, un bicchiere da 150g</div></li>
+</ul></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-moon"></i> CENA</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🥩 <b>Vitella:</b> 200g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Pollo (coscio o a pezzi senza pelle) 200g / Orata selvatica, pesce spada, trota, dentice, scorfano, corvina, cernia, tonno in trancio, ricciola, alici fresche 200g</div></li>
+<li>🍞 <b>Pane integrale o di segale:</b> 30g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Fette Wasa integrali n°2, 20g / Patate 100g / Piselli freschi o surgelati 150g / Pangrattato per gratinatura al forno 15g</div></li>
+<li>🥦 <b>Verdure:</b> 250g</li>
+</ul></div>
+<div class="bg-emerald-50 p-3.5 rounded-2xl border border-emerald-100 text-xs text-emerald-900"><p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-bottle-droplet text-emerald-600"></i> CONDIMENTI GIORNALIERI</p><p class="mt-1"><b>Olio extravergine d&#x27;oliva:</b> 20g (4 cucchiaini da the da gestire tra pranzo e cena)</p><p class="text-gray-600 text-[11px] mt-0.5">Aceto, limone, aglio, spezie, sugo di pomodoro: q.b.</p></div>
+</div>
+<div id="lista3" class="tab-content hidden space-y-3">
+<div class="bg-amber-50 border border-amber-200 text-amber-800 text-xs p-2.5 rounded-xl font-medium flex justify-between items-center"><span>🗓️ Giornate: <b>Mercoledì</b> e <b>Domenica</b></span><span class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded text-[10px] uppercase font-bold">Lista 3</span></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-1"><i class="fa-solid fa-mug-hot"></i> COLAZIONE</div><p class="text-xs text-gray-700">Come colazione lista 1</p></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-apple-whole"></i> SPUNTINO MATTINA</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🫘 <b>Lupini ben dissalati:</b> 50g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Yogurt al naturale 0,1%grassi 125g / Fiocchi di latte 0,3% grassi 75g, 1/2 vasetto (es Milk )</div></li>
+</ul></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-utensils"></i> PRANZO</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🍝 <b>Pasta:</b> 50g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Pasta integrale, riso (integrale, venere, rosso o basmati), couscous, orzo, farro, quinoa, sorgo, bulgur 50g / Grano saraceno, pasta di grano saraceno 60g / Pane integrale o di segale 80g / Frisella integrale 50g</div></li>
+<li>🧀 <b>Ricotta fresca di vacca o di pecora:</b> 100g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Fiocchi di formaggio 0,3% grassi 150g (es Milk) / Primo sale, formaggio spalmabile light 70g / Mozzarella fiordilatte 50g / Crescenza, robiola, stracchino, certosa 40g</div></li>
+<li>🥦 <b>Verdure:</b> 250g</li>
+</ul></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-cookie-bite"></i> SPUNTINO POMERIGGIO</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🍓 <b>Frutta fresca di stagione:</b> 200g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Banana, mandarini, uva, fichi, mango 100g / Spremuta o centrifuga di frutta e verdura, un bicchiere da 150g</div></li>
+</ul></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-moon"></i> CENA</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🐟 <b>Spigola:</b> 250g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Nasello, merluzzo, rombo, branzino, sogliola o platessa, baccalà, rana pescatrice 250g</div></li>
+<li>🍞 <b>Pane integrale o di segale:</b> 30g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Fette Wasa integrali n°2, 20g / Patate 100g / Piselli freschi o surgelati 150g / Pangrattato per gratinatura al forno 15g</div></li>
+<li>🥦 <b>Verdure:</b> 250g</li>
+</ul></div>
+<div class="bg-emerald-50 p-3.5 rounded-2xl border border-emerald-100 text-xs text-emerald-900"><p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-bottle-droplet text-emerald-600"></i> CONDIMENTI GIORNALIERI</p><p class="mt-1"><b>Olio extravergine d&#x27;oliva:</b> 20g (4 cucchiaini da the da gestire tra pranzo e cena)</p><p class="text-gray-600 text-[11px] mt-0.5">Aceto, limone, aglio, spezie, sugo di pomodoro: q.b.</p></div>
+</div>
+<div id="lista4" class="tab-content hidden space-y-3">
+<div class="bg-amber-50 border border-amber-200 text-amber-800 text-xs p-2.5 rounded-xl font-medium flex justify-between items-center"><span>🗓️ Giornata: <b>Sabato</b></span><span class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded text-[10px] uppercase font-bold">Lista 4</span></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-1"><i class="fa-solid fa-mug-hot"></i> COLAZIONE</div><p class="text-xs text-gray-700">Come colazione lista 1</p></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-apple-whole"></i> SPUNTINO MATTINA</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🫘 <b>Lupini ben dissalati:</b> 50g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Yogurt al naturale 0,1%grassi 125g / Fiocchi di latte 0,3% grassi 75g, 1/2 vasetto (es Milk )</div></li>
+</ul></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-utensils"></i> PRANZO</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🍗 <b>Tacchino (petto):</b> 200g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Pollo (petto), vitella 200g / Merluzzo, nasello, spigola selvatica, rombo, branzino, sogliola o platessa, baccalà, rana pescatrice 250g</div></li>
+<li>🥦 <b>Verdure:</b> 250g</li>
+</ul></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100"><div class="flex items-center gap-2 text-emerald-600 font-bold mb-2 pb-1 border-b border-gray-100"><i class="fa-solid fa-cookie-bite"></i> SPUNTINO POMERIGGIO</div><ul class="text-xs space-y-2 text-gray-700">
+<li>🍓 <b>Frutta fresca di stagione:</b> 200g
+<div class="text-[11px] text-gray-500 bg-gray-50 p-2 rounded-lg mt-1 border border-gray-100"><b>Oppure:</b> Banana, mandarini, uva, fichi, mango 100g / Spremuta o centrifuga di frutta e verdura, un bicchiere da 150g</div></li>
+</ul></div>
+<div class="bg-purple-50 p-4 rounded-2xl border border-purple-200 shadow-sm"><div class="flex items-center justify-between text-purple-900 font-bold mb-1"><span class="flex items-center gap-2"><i class="fa-solid fa-star text-purple-600"></i> CENA: PASTO LIBERO</span><span class="bg-purple-200 text-purple-800 text-[10px] px-2 py-0.5 rounded-full font-bold">SABATO CENA</span></div></div>
+<div class="bg-emerald-50 p-3.5 rounded-2xl border border-emerald-100 text-xs text-emerald-900"><p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-bottle-droplet text-emerald-600"></i> CONDIMENTI SABATO</p><p class="mt-1"><b>Olio extravergine d&#x27;oliva:</b> 10g (2 cucchiaini da the a pranzo)</p><p class="text-gray-600 text-[11px] mt-0.5">Aceto, limone, aglio, spezie, sugo di pomodoro: q.b.</p></div>
+</div>
+<div id="evitare" class="tab-content hidden space-y-3">
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-3"><h3 class="font-bold text-xs text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-2" style="margin:0">🥩 CARNE</h3><div class="text-xs text-gray-600 leading-relaxed bg-red-50/50 p-2.5 rounded-xl border border-red-100/50 space-y-3"><span class="text-[11px] font-bold text-red-600 uppercase block mb-1">❌ Evitare</span><p>Grasso visibile, pelle, pollame grasso, bovino adulto, ali di pollo, arrosticini, frattaglie, carne di maiale, anatra, carni conservate (in salamoia, sotto sale, affumicata, in scatola), polpette e polpettoni pronti</p></div></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-3"><h3 class="font-bold text-xs text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-2" style="margin:0">🐟 PESCE</h3><div class="text-xs text-gray-600 leading-relaxed bg-red-50/50 p-2.5 rounded-xl border border-red-100/50 space-y-3"><span class="text-[11px] font-bold text-red-600 uppercase block mb-1">❌ Evitare</span><p>Surimi, pesce panato preconfezionato (croccole, bastoncini ecc), crostacei, molluschi, frutti di mare, triglie, aringhe, bottarga, uova di pesce</p></div></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-3"><h3 class="font-bold text-xs text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-2" style="margin:0">🍳 METODI DI COTTURA</h3><div class="text-xs text-gray-600 leading-relaxed bg-red-50/50 p-2.5 rounded-xl border border-red-100/50 space-y-3"><span class="text-[11px] font-bold text-red-600 uppercase block mb-1">❌ Evitare</span><p>Fritto, soffritto, parti bruciate</p></div></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-3"><h3 class="font-bold text-xs text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-2" style="margin:0">🍎 FRUTTA</h3><div class="text-xs text-gray-600 leading-relaxed bg-red-50/50 p-2.5 rounded-xl border border-red-100/50 space-y-3"><span class="text-[11px] font-bold text-red-600 uppercase block mb-1">❌ Evitare</span><p>Frutta sciroppata, zuccherata, candita, disidratata, cocco, datteri</p></div></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-3"><h3 class="font-bold text-xs text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-2" style="margin:0">🫒 CONDIMENTI</h3><div class="text-xs text-gray-600 leading-relaxed bg-red-50/50 p-2.5 rounded-xl border border-red-100/50 space-y-3"><span class="text-[11px] font-bold text-red-600 uppercase block mb-1">❌ Evitare</span><p>Soffritti, burro, margarina, parmigiano, grassi idrogenati, strutto, panna, besciamella, intingoli,sughi elaborati, sughi pronti, brodo pronto, dadi, estratti di carne, esaltatori di sapidità (glutammato), aceto balsamico in glassa, ketchup, maionese, senape e co., salsa di soia, alici sott’olio</p></div></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-3"><h3 class="font-bold text-xs text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-2" style="margin:0">🍝 1° PIATTO</h3><div class="text-xs text-gray-600 leading-relaxed bg-red-50/50 p-2.5 rounded-xl border border-red-100/50 space-y-3"><span class="text-[11px] font-bold text-red-600 uppercase block mb-1">❌ Evitare</span><p>Pasta all’uovo, paste ripiene, cannelloni, lasagne</p></div></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-3"><h3 class="font-bold text-xs text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-2" style="margin:0">🍞 FARINACEI</h3><div class="text-xs text-gray-600 leading-relaxed bg-red-50/50 p-2.5 rounded-xl border border-red-100/50 space-y-3"><span class="text-[11px] font-bold text-red-600 uppercase block mb-1">❌ Evitare</span><p>Crackers, grissini, taralli, crostini e simili, biscotti frollini e farciti, pan bauletto, pan carrè, pane all’olio, pane bianco, pane al latte, pane con semi, pizza bianca, tramezzini, piadine, pasta frolla, sfoglia o brisee</p></div></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-3"><h3 class="font-bold text-xs text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-2" style="margin:0">🧀 LATTICINI</h3><div class="text-xs text-gray-600 leading-relaxed bg-red-50/50 p-2.5 rounded-xl border border-red-100/50 space-y-3"><span class="text-[11px] font-bold text-red-600 uppercase block mb-1">❌ Evitare</span><p>Yogurt e latte interi, yogurt con zuccheri aggiunti, alla frutta o a gusti vari, yogurt proteici, ricotta con crema di latte, formaggi grassi e stagionati, mascarpone, panna, panna vegetale</p></div></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-3"><h3 class="font-bold text-xs text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-2" style="margin:0">🍖 AFFETTATI</h3><div class="text-xs text-gray-600 leading-relaxed bg-red-50/50 p-2.5 rounded-xl border border-red-100/50 space-y-3"><span class="text-[11px] font-bold text-red-600 uppercase block mb-1">❌ Evitare</span><p>Salame, speck, mortadella, pancetta, lonza, lonzino, lardo, guanciale, coppa, coppiette, capocollo, salsicce, wurstel ecc…</p></div></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-3"><h3 class="font-bold text-xs text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-2" style="margin:0">🥬 VERDURA</h3><div class="text-xs text-gray-600 leading-relaxed bg-red-50/50 p-2.5 rounded-xl border border-red-100/50 space-y-3"><span class="text-[11px] font-bold text-red-600 uppercase block mb-1">❌ Evitare</span><p>Verdure sott’olio, sott’aceto o in agrodolce</p></div></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-3"><h3 class="font-bold text-xs text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-2" style="margin:0">💧 BEVANDE</h3><div class="text-xs text-gray-600 leading-relaxed bg-red-50/50 p-2.5 rounded-xl border border-red-100/50 space-y-3"><span class="text-[11px] font-bold text-red-600 uppercase block mb-1">❌ Evitare</span><p>Alcolici e superalcolici, bibite gassate (anche zero calorie), bibite zuccherine, succhi di frutta industriali, the freddi industriali, ginseng zuccherato Evitare anche il the o il caffè vicino ai pasti poiché i tannini riducono la biodisponibilità di Ferro</p></div></div>
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-3"><h3 class="font-bold text-xs text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-2" style="margin:0">⚠️ ALTRO</h3><div class="text-xs text-gray-600 leading-relaxed bg-red-50/50 p-2.5 rounded-xl border border-red-100/50 space-y-3"><span class="text-[11px] font-bold text-red-600 uppercase block mb-1">❌ Evitare</span><p>Prodotti con sciroppo di fruttosio, sciroppo di mais, sciroppo di fruttosio-glucosio, zucchero invertito; zucchero bianco o di canna, aspartame, fruttosio, caramelle con zucchero, alimenti precotti e sotto sale, olio di cocco o di palma, sciroppo d’agave o di acero, zucchero d’uva o di cocco</p></div></div>
+</div>
+    </main>
+
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-emerald-600', 'text-white');
+                btn.classList.add('bg-white', 'text-gray-600');
+            });
+            document.getElementById(tabId).classList.remove('hidden');
+            const activeBtn = document.getElementById('tab-' + tabId);
+            activeBtn.classList.remove('bg-white', 'text-gray-600');
+            activeBtn.classList.add('bg-emerald-600', 'text-white');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function placeTabs() {
+            const h = document.querySelector('header'), b = document.getElementById('tabsbar');
+            if (h && b) b.style.top = (h.offsetHeight - 1) + 'px';
+        }
+        window.addEventListener('load', placeTabs);
+        window.addEventListener('resize', placeTabs);
+        if (window.ResizeObserver) new ResizeObserver(placeTabs).observe(document.querySelector('header'));
+        placeTabs();
+    </script>
+</body>
+</html>
